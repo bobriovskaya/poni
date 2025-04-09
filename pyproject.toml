@@ -1,0 +1,18 @@
+[project]
+name = "poni"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dynaconf>=3.2.10",
+    "models",
+    "pydantic",
+    "pytest>=8.3.5",
+    "requests",
+]
+
+[tool.uv.sources]
+models = { path = "../poni_test_pool/models" }
+pydantic = { path = "../poni_test_pool/pydantic" }
+requests = { path = "../poni_test_pool/requests" }
